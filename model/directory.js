@@ -6,11 +6,14 @@ const directoryModel = mongoose.Schema({
     },
     parent : {
         type : mongoose.Schema.Types.ObjectId,
-        ref : "User"
+        ref : "User",
+        required : true
     },
     isRoot : {
         type : 'boolean',
-        default : false
+        default : false,
+        required : true
+
     },
     createdAt : {
         type : 'date',

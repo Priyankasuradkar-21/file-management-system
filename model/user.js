@@ -14,15 +14,18 @@ const userModel = new mongoose.Schema({
     },
     isAccountVerified : {
         type : 'boolean',
-        default : false
+        default : false,
+        required : true
     },
     otpVerifier : {
         otp : {
             type : 'number',
+            required : true
         },
         isVerified : {
             type : 'boolean',
-            default : false
+            default : false,
+            required : true
         }
     }
 })

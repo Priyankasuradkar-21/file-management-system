@@ -2,7 +2,8 @@ const mongoose = require('mongoose')
 const systemModel = mongoose.Schema({
     userId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "User"
+        ref: "User",
+        required : true
     },
     storageService: {
         type: 'string',

@@ -3,20 +3,25 @@ const fileModel = mongoose.Schema({
   directory: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Directory",
+    required : true
   },
   userId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
+    required : true
   },
   name: {
     type: "string",
     required: true,
+    required : true
   },
   mimeType: {
     type: "string",
+    required : true
   },
   encoding: {
     type: "string",
+    required : true
   },
   fileLink: {
     type: "string",
